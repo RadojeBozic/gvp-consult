@@ -59,7 +59,7 @@ const posts = [
 </script>
 
 <template>
-  <section id="blog" class="py-20 bg-white">
+  <section id="blog" class="pt-10 pb-16 bg-white">
     <div class="max-w-7xl mx-auto px-6">
 
       <div class="text-center mb-14">
@@ -70,6 +70,8 @@ const posts = [
         <h2 class="text-4xl font-serif font-bold mt-4 text-[#222222]">
           Stručni tekstovi i edukacije
         </h2>
+
+        <div class="section-divider"></div>
 
         <p class="text-gray-600 max-w-3xl mx-auto mt-5 leading-relaxed">
           Aktuelne teme iz oblasti bezbednosti proizvoda, regulatorne
@@ -82,7 +84,7 @@ const posts = [
         <article
           v-for="post in posts"
           :key="post.title"
-          class="bg-[#f8f5f1] rounded-xl overflow-hidden shadow hover:shadow-xl transition duration-300"
+          class="bg-[#f8f5f1] rounded-xl overflow-hidden shadow card-hover"
         >
           <div class="bg-white">
             <img

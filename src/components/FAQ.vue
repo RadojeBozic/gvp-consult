@@ -11,6 +11,8 @@
       <h2 class="text-4xl font-serif font-bold mt-4">
         Često postavljana pitanja
       </h2>
+
+      <div class="section-divider"></div>
     </div>
 
     <div class="space-y-6">

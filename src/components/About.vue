@@ -1,15 +1,15 @@
 <script setup>
-import gocaImage from '../assets/images/goca1.jpg'
+import gocaImage from '../assets/images/goca4.png';
 </script>
 
 <template>
-  <section id="about" class="bg-white py-20">
+  <section id="about" class="bg-white pt-12 pb-10">
     <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
       <img
-        :src="gocaImage"
-        alt="Gordana Vraštanović Pavićević"
-        class="rounded-lg shadow-xl w-full h-[540px] object-cover object-top"
-      />
+      :src="gocaImage"
+      alt="Gordana Vraštanović Pavićević"
+       class="rounded-lg shadow-xl w-full h-[540px] object-cover object-left"
+    />
 
       <div>
         <span class="uppercase text-orange-500 text-sm tracking-widest">

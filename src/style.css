@@ -3,3 +3,80 @@
 html {
   scroll-behavior: smooth;
 }
+
+.section-divider {
+  width: 72px;
+  height: 3px;
+  background: #f97316;
+  margin: 18px auto 0;
+  border-radius: 999px;
+}
+
+.nav-link {
+  position: relative;
+  color: #374151;
+  transition: color 0.25s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background: #f97316;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover {
+  color: #f97316;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+.ticker {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5rem;
+  animation: ticker-scroll 38s linear infinite;
+}
+
+.ticker-item {
+  position: relative;
+  color: #374151;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.ticker-item::after {
+  content: "•";
+  color: #f97316;
+  margin-left: 2.5rem;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

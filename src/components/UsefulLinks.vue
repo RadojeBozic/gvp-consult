@@ -11,6 +11,8 @@
       <h2 class="text-4xl font-serif font-bold mt-4">
         Relevantne institucije
       </h2>
+
+      <div class="section-divider"></div>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

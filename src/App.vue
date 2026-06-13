@@ -18,12 +18,12 @@ import Footer from './components/Footer.vue'
   <div class="min-h-screen bg-[#f8f5f1] text-[#2f2f2f]">
     <Header />
     <Hero />
+    <Services />
     <Benefits />
     <About />
     <BlogPreview />
     <NewsArchive />
     <FAQ />
-    <Services />
     <Events />
     <UsefulLinks />
     <Testimonials />

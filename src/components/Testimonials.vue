@@ -11,6 +11,8 @@
       <h2 class="text-4xl font-serif font-bold mt-4">
         Šta klijenti kažu o saradnji
       </h2>
+
+      <div class="section-divider"></div>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">

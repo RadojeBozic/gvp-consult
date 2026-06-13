@@ -17,14 +17,14 @@ const closeMenu = () => {
       </a>
 
       <nav class="hidden lg:flex gap-8 text-sm uppercase tracking-wide">
-        <a href="#home">Početna</a>
-        <a href="#about">O nama</a>
-        <a href="#services">Usluge</a>
-        <a href="#blog">Blog</a>
-        <a href="#events">Događaji</a>
-        <a href="#news">Vesti</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#home" class="nav-link">Početna</a>
+        <a href="#about" class="nav-link">O nama</a>
+        <a href="#services" class="nav-link">Usluge</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#events" class="nav-link">Događaji</a>
+        <a href="#news" class="nav-link">Vesti</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Kontakt</a>
       </nav>
 
       <div class="hidden lg:flex items-center gap-4">
@@ -64,13 +64,13 @@ const closeMenu = () => {
       class="lg:hidden bg-white border-t border-gray-200 shadow-md"
     >
       <nav class="px-6 py-5 flex flex-col gap-4 text-sm uppercase tracking-wide">
-        <a href="#home" @click="closeMenu">Početna</a>
-        <a href="#about" @click="closeMenu">O nama</a>
-        <a href="#services" @click="closeMenu">Usluge</a>
-        <a href="#blog" @click="closeMenu">Blog</a>
-        <a href="#events" @click="closeMenu">Događaji</a>
-        <a href="#news" @click="closeMenu">Vesti</a>
-        <a href="#faq" @click="closeMenu">FAQ</a>
+        <a href="#home" class="hover:text-orange-500" @click="closeMenu">Početna</a>
+        <a href="#about" class="hover:text-orange-500" @click="closeMenu">O nama</a>
+        <a href="#services" class="hover:text-orange-500" @click="closeMenu">Usluge</a>
+        <a href="#blog" class="hover:text-orange-500" @click="closeMenu">Blog</a>
+        <a href="#events" class="hover:text-orange-500" @click="closeMenu">Događaji</a>
+        <a href="#news" class="hover:text-orange-500" @click="closeMenu">Vesti</a>
+        <a href="#faq" class="hover:text-orange-500" @click="closeMenu">FAQ</a>
         <a href="#contact" @click="closeMenu">Kontakt</a>
 
         <div class="pt-4 border-t border-gray-200 flex items-center gap-4">

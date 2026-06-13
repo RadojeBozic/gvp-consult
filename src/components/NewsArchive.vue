@@ -11,7 +11,11 @@
       <h2 class="text-4xl font-serif font-bold mt-4">
         Aktuelnosti i stručne informacije
       </h2>
+
+      
     </div>
+
+    <div class="section-divider"></div>
 
     <div class="grid md:grid-cols-3 gap-8">
 

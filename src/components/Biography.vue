@@ -1,5 +1,5 @@
 <script setup>
-import gocaImage from '../assets/images/goca2.jpg'
+import gocaImage from '../assets/images/goca3.jpg'
 </script>
 
 <template>
