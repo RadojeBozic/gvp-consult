@@ -19,11 +19,11 @@ import gocaImage from '../assets/images/goca3.jpg'
         </span>
 
         <h2 class="text-4xl font-serif font-bold mt-4 mb-5 text-[#222222]">
-          Gordana Vraštanović Pavićević
+          Gordana Vraštanović Pavićević, dipl.hem. 
         </h2>
 
         <p class="text-lg font-semibold text-orange-600 mb-6">
-          Specijalista sanitarne hemije · Konsultant za bezbednost proizvoda i regulatornu usklađenost
+          Specijalista sanitarne hemije, PR GVP CONSULT,
         </p>
 
         <p class="text-gray-700 leading-relaxed mb-4">

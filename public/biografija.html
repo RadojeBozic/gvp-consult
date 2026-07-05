@@ -1,253 +1,519 @@
 <!DOCTYPE html>
 <html lang="sr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografija | Gordana Vraštanović Pavićević</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <title>Biografija | Gordana Vraštanović Pavićević</title>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background: #f8f5f1;
-        }
+  <meta
+    name="description"
+    content="Biografija Gordane Vraštanović Pavićević, specijaliste sanitarne hemije i savetnika za procenu bezbednosti proizvoda, regulatornu usklađenost i dokumentaciju."
+  />
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 50px 20px;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .hero {
-            background: white;
-            border-radius: 12px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.08);
-        }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.8;
+      color: #333;
+      background: #f8f5f1;
+    }
 
-        h1 {
-            font-size: 42px;
-            color: #222;
-            margin-bottom: 10px;
-        }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 20px;
+    }
 
-        h2 {
-            font-size: 30px;
-            color: #222;
-            margin-bottom: 20px;
-            margin-top: 50px;
-        }
+    .hero {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 50px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    }
 
-        h3 {
-            color: #f59a57;
-            margin-bottom: 10px;
-        }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 40px;
+      align-items: center;
+    }
 
-        .subtitle {
-            font-size: 20px;
-            color: #666;
-            margin-bottom: 20px;
-        }
+    .hero-image img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.16);
+    }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-            gap: 25px;
-        }
+    .label {
+      color: #f97316;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
 
-        .hero-grid {
-        display: grid;
-        grid-template-columns: 350px 1fr;
-        gap: 40px;
-        align-items: center;
-        }
+    h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      color: #222;
+      margin-bottom: 14px;
+    }
 
-        .hero-image img {
-        width: 100%;
-        border-radius: 12px;
-        box-shadow: 0 5px 20px rgba(0,0,0,.15);
-        }
+    h2 {
+      font-size: 30px;
+      color: #222;
+      margin-bottom: 22px;
+      margin-top: 50px;
+    }
 
-        @media (max-width: 900px) {
+    h3 {
+      color: #f97316;
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
 
-        .hero-grid {
-            grid-template-columns: 1fr;
-        }
+    .subtitle {
+      font-size: 20px;
+      color: #666;
+      margin-bottom: 22px;
+    }
 
-        }
+    .intro {
+      font-size: 17px;
+      color: #444;
+      max-width: 760px;
+    }
 
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,.06);
-        }
+    .back-button {
+      display: inline-block;
+      margin-top: 28px;
+      background: #f97316;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.25s ease;
+    }
 
-        ul {
-            padding-left: 20px;
-        }
+    .back-button:hover {
+      background: #ea580c;
+    }
 
-        li {
-            margin-bottom: 8px;
-        }
+    .section {
+      margin-bottom: 45px;
+    }
 
-        .contact-box {
-            background: #222;
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin-top: 40px;
-        }
+    .lead-box {
+      background: #fff;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    }
 
-        .contact-box a {
-            color: #f59a57;
-            text-decoration: none;
-        }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
 
-        .back-button {
-            display: inline-block;
-            margin-top: 30px;
-            background: #f59a57;
-            color: white;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 6px;
-        }
+    .card {
+      background: #fff;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    }
 
-        .back-button:hover {
-            background: #e8843c;
-        }
-    </style>
+    ul {
+      padding-left: 20px;
+      margin-top: 12px;
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+
+    .contact-box {
+      background: #222;
+      color: #fff;
+      padding: 34px;
+      border-radius: 14px;
+      margin-top: 50px;
+    }
+
+    .contact-box h2 {
+      color: #fff;
+      margin-top: 0;
+    }
+
+    .contact-box a {
+      color: #f97316;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .timeline {
+  background: #fff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-year {
+  color: #f97316;
+  font-weight: bold;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #fff;
+  border: 1px solid #f5c7a5;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .hero {
+        padding: 28px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <main class="container">
 
-<div class="container">
-
-    <div class="hero-grid"> <div class="hero-image"> <img src="/images/goca3.jpg" alt="Gordana Vraštanović Pavićević" > </div> <div class="hero-content"> <h1> Gordana Vraštanović Pavićević </h1> <p class="subtitle"> Specijalista sanitarne hemije </p> <p> Konsultant za bezbednost proizvoda, regulatornu usklađenost, dokumentaciju i stručnu podršku proizvođačima, uvoznicima, distributerima i laboratorijama. </p> <a href="/" class="back-button"> Povratak na početnu stranu </a> </div> </div>
-
-    <h2>Profesionalni profil</h2>
-
-    <p>
-        Gordana Vraštanović Pavićević poseduje višegodišnje iskustvo u oblasti
-        laboratorijskih ispitivanja, kontrole kvaliteta, procene bezbednosti
-        proizvoda i regulatorne usklađenosti.
-
-        Kroz GVP Consult pruža stručnu podršku sektorima za kontrolu kvaliteta,
-        uvoz, izvoz, proveru dokumentacije i izradu Deklaracija o usaglašenosti
-        (DoC), kao i komunikaciju sa laboratorijama i regulatornim telima.
-    </p>
-
-    <h2>Oblasti ekspertize</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Ambalaža za kontakt sa hranom</h3>
-            <p>
-                Food Contact Materials (FCM), DoC dokumentacija,
-                GMP zahtevi i regulatorna usklađenost.
-            </p>
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-image">
+          <img
+            src="/images/goca3.jpg"
+            alt="Gordana Vraštanović Pavićević"
+          />
         </div>
 
-        <div class="card">
-            <h3>Kozmetički proizvodi</h3>
-            <p>
-                PIF dokumentacija, bezbednost proizvoda,
-                deklarisanje i regulatorni zahtevi.
-            </p>
+        <div class="hero-content">
+          <span class="label">Biografija</span>
+
+          <h1>Gordana Vraštanović Pavićević, dipl. hem.</h1>
+
+          <p class="subtitle">
+            Specijalista sanitarne hemije · PR GVP Consult
+          </p>
+
+          <p class="intro">
+            Savetnik za procenu bezbednosti proizvoda — predmeta opšte upotrebe,
+            regulatornu usklađenost, dokumentaciju i stručnu podršku proizvođačima,
+            uvoznicima, distributerima i laboratorijama.
+          </p>
+
+          <a href="/" class="back-button">
+            Povratak na početnu stranu
+          </a>
         </div>
+      </div>
+    </section>
 
-        <div class="card">
-            <h3>Igračke</h3>
-            <p>
-                Procena bezbednosti i usklađenosti
-                proizvoda namenjenih deci.
-            </p>
-        </div>
+    <section class="section lead-box">
+      <h2>Profesionalni profil</h2>
 
-        <div class="card">
-            <h3>Kontakt sa kožom i sluzokožom</h3>
-            <p>
-                Nakit, bižuterija, pelene, ulošci,
-                brijači, boje za tetovažu i srodni proizvodi.
-            </p>
-        </div>
+      <p>
+        GVP Consult pruža stručnu podršku sektorima za kontrolu kvaliteta i
+        bezbednosti, uvoz, izvoz, proveru dokumentacije, mapiranje neophodne
+        tehničke dokumentacije, izradu Deklaracija o usaglašenosti (DoC),
+        izradu deklaracija za proizvode, „in house” obuke, kao i efikasnu
+        komunikaciju sa dobavljačima, laboratorijama i regulatornim telima.
+      </p>
 
-        <div class="card">
-            <h3>Laboratorije</h3>
-            <p>
-                Validacija metoda, analiza rezultata,
-                dokumentacija i stručna podrška.
-            </p>
-        </div>
+      <br />
 
-        <div class="card">
-            <h3>Regulatorna usklađenost</h3>
-            <p>
-                Tumačenje domaćih i EU propisa,
-                procena rizika i stručna savetovanja.
-            </p>
-        </div>
+      <p>
+        Gordana Vraštanović Pavićević, spec. san. hem., poseduje višedecenijsko
+        iskustvo u oblasti laboratorijskih ispitivanja, razvoja metoda ispitivanja,
+        kontrole i procene bezbednosti predmeta opšte upotrebe i regulatorne
+        usklađenosti, kao i u izradi nacionalnih propisa iz oblasti predmeta
+        opšte upotrebe.
+      </p>
 
-    </div>
+      <br />
 
-    <h2>Stručni angažmani</h2>
+      <p>
+        Aktivni je učesnik stručnih skupova, edukacija, seminara i konferencija
+        iz oblasti bezbednosti predmeta opšte upotrebe, laboratorijskih ispitivanja
+        i regulatorne usklađenosti.
+      </p>
+    </section>
 
-    <p>
-        Aktivni učesnik stručnih skupova, edukacija,
-        seminara i konferencija iz oblasti bezbednosti proizvoda,
-        laboratorijskih ispitivanja i regulatorne usklađenosti.
-    </p>
+    <section class="section timeline">
+  <h2>Profesionalni put</h2>
 
-    <ul>
-        <li>Nacionalni kongres zdravstvenih radnika Srbije</li>
-        <li>Stručni skupovi iz oblasti predmeta opšte upotrebe</li>
-        <li>Konferencije o bezbednosti hrane i ambalaže</li>
-        <li>Predavanja o regulatornoj usklađenosti proizvoda</li>
-    </ul>
+  <div class="timeline-item">
+    <div class="timeline-year">2024–danas</div>
+    <div><strong>GVP Consult</strong> — Preduzetnik, pružanje saveta u oblasti predmeta opšte upotrebe i drugih procesa poslovanja.</div>
+  </div>
 
-    <h2>Aktuelne stručne teme</h2>
+  <div class="timeline-item">
+    <div class="timeline-year">2022–danas</div>
+    <div><strong>Fieldtest</strong> — Samostalni stručni saradnik.</div>
+  </div>
 
-    <ul>
-        <li>Food Contact Materials (FCM)</li>
-        <li>PPWR regulativa</li>
-        <li>PFAS jedinjenja</li>
-        <li>Deklaracije o usaglašenosti (DoC)</li>
-        <li>Reciklirani materijali za kontakt sa hranom</li>
-        <li>Mikroplastika i nanoplastika</li>
-        <li>Bezbednost proizvoda u e-trgovini</li>
-        <li>Kozmetički proizvodi i PIF dokumentacija</li>
-    </ul>
+  <div class="timeline-item">
+    <div class="timeline-year">2022</div>
+    <div><strong>Aerolab</strong> — Analitičar/specijalista, razvoj laboratorije.</div>
+  </div>
 
-    <div class="contact-box">
+  <div class="timeline-item">
+    <div class="timeline-year">2020–2022</div>
+    <div><strong>MP BIO / MPLab</strong> — Rukovodilac laboratorije.</div>
+  </div>
 
-        <h2 style="color:white;margin-top:0;">
-            Kontakt
-        </h2>
+  <div class="timeline-item">
+    <div class="timeline-year">2014–2020</div>
+    <div><strong>Centar za ispitivanje namirnica</strong> — Analitičar/specijalista, metrologija.</div>
+  </div>
 
-        <p>Email: gvpconsult24@gmail.com</p>
+  <div class="timeline-item">
+    <div class="timeline-year">1991–2014</div>
+    <div><strong>Institut “Dr Milan Jovanović Batut”</strong> — Analitičar, šef laboratorije i načelnik Odeljenja.</div>
+  </div>
+</section>
 
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/gordana-vrastanovic-pavicevic-48698171/"
-               target="_blank">
-                Pogledajte profil
-            </a>
-        </p>
+<section class="section timeline">
+  <h2>Obrazovanje</h2>
 
-    </div>
+  <div class="timeline-item">
+    <div class="timeline-year">1994–1999</div>
+    <div><strong>Specijalista sanitarne hemije</strong> — Farmaceutski fakultet, Univerzitet u Beogradu.</div>
+  </div>
 
-</div>
+  <div class="timeline-item">
+    <div class="timeline-year">1985–1991</div>
+    <div><strong>Diplomirani hemičar</strong> — Hemijski fakultet PMF, Univerzitet u Beogradu.</div>
+  </div>
+</section>
 
+<section class="section timeline">
+  <h2>Dodatna stručna angažovanja</h2>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2024–sada</div>
+    <div><strong>Institut za standardizaciju Srbije</strong> — član komisije KS E194.</div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2022–2026</div>
+    <div><strong>Ministarstvo zdravlja RS</strong> — predsednik/član radne grupe za izradu pravilnika o materijalima i predmetima u kontaktu sa hranom.</div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2023–2026</div>
+    <div><strong>Farmaceutski fakultet, Katedra za toksikologiju</strong> — predavač na seminarima o toksikološkim rizicima predmeta opšte upotrebe.</div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2024–2026</div>
+    <div><strong>Ambipak</strong> — predavač na seminarima o ambalaži za hranu.</div>
+  </div>
+</section>
+
+<section class="section lead-box">
+  <h2>Veštine i usavršavanja</h2>
+
+  <div class="skills-list">
+    <span class="skill">Regulatorni poslovi RS i EU</span>
+    <span class="skill">Akreditacija ISO/IEC 17025</span>
+    <span class="skill">Razvoj metoda</span>
+    <span class="skill">Rukovođenje laboratorijom</span>
+    <span class="skill">Deklaracije o usaglašenosti</span>
+    <span class="skill">Edukacije i obuke</span>
+    <span class="skill">NLP Basic</span>
+    <span class="skill">Coaching Basic</span>
+    <span class="skill">Prezentacione veštine</span>
+    <span class="skill">Javni nastup</span>
+  </div>
+</section>
+
+    <section class="section">
+      <h2>Oblasti ekspertize</h2>
+
+      <div class="grid">
+
+        <article class="card">
+          <h3>Materijali i predmeti za kontakt sa hranom</h3>
+          <p>
+            Food Contact Materials (FCM), ambalaža, posuđe i drugi materijali
+            namenjeni kontaktu sa hranom.
+          </p>
+          <ul>
+            <li>Menadžment testiranjem</li>
+            <li>Provera izveštaja o ispitivanju i usklađenosti sa propisima Republike Srbije i/ili EU</li>
+            <li>Mapiranje tehničke dokumentacije</li>
+            <li>Formiranje Deklaracije o usaglašenosti (DoC)</li>
+            <li>Priprema nacrta deklaracije i uputstva za upotrebu</li>
+            <li>Pomoć pri formiranju dokumenta o Dobroj proizvođačkoj praksi (GMP)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Kozmetički proizvodi</h3>
+          <p>
+            Podrška proizvođačima, uvoznicima i distributerima kozmetičkih
+            proizvoda u vezi sa dokumentacijom i regulatornim zahtevima.
+          </p>
+          <ul>
+            <li>Menadžment testiranjem</li>
+            <li>Provera izveštaja o ispitivanju i usklađenosti sa propisima Republike Srbije i/ili EU</li>
+            <li>Mapiranje tehničke dokumentacije</li>
+            <li>Plan aktivnosti za izradu Dosijea sa informacijama o proizvodu (PIF)</li>
+            <li>Priprema nacrta deklaracije</li>
+            <li>Pomoć pri kategorizaciji graničnih proizvoda</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Igračke</h3>
+          <p>
+            Stručna podrška u vezi sa bezbednošću, dokumentacijom i usklađenošću
+            proizvoda namenjenih deci.
+          </p>
+          <ul>
+            <li>Menadžment testiranjem</li>
+            <li>Provera izveštaja o ispitivanju</li>
+            <li>Mapiranje tehničke dokumentacije</li>
+            <li>Plan aktivnosti za izradu Deklaracije o usaglašenosti</li>
+            <li>Priprema nacrta deklaracije</li>
+            <li>Pomoć pri kategorizaciji graničnih proizvoda</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Kontakt sa kožom i sluzokožom</h3>
+          <p>
+            Predmeti namenjeni za kontakt sa kožom i sluzokožom, koji narušavaju
+            ili ne narušavaju njihov integritet.
+          </p>
+          <ul>
+            <li>Nakit i bižuterija</li>
+            <li>Boje za tetovažu</li>
+            <li>Pirsing i srodni proizvodi</li>
+            <li>Provera izveštaja o ispitivanju</li>
+            <li>Mapiranje tehničke dokumentacije</li>
+            <li>Plan aktivnosti za izradu Deklaracije o usklađenosti</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Laboratorije</h3>
+          <p>
+            Stručna podrška laboratorijama za ispitivanje bezbednosti,
+            usaglašenosti i zdravstvene ispravnosti.
+          </p>
+          <ul>
+            <li>Planiranje razvoja i proširenja obima akreditacije</li>
+            <li>Planiranje obima ispitivanja</li>
+            <li>Validacija metoda</li>
+            <li>Analiza rezultata ispitivanja</li>
+            <li>Stručna podrška u tumačenju propisa</li>
+            <li>Podrška za izjave o usaglašenosti i stručna mišljenja</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Kontrola kvaliteta i regulatorna usklađenost</h3>
+          <p>
+            Tumačenje domaćih i EU propisa, procena rizika i stručna savetovanja
+            za poslovanje usklađeno sa relevantnim propisima.
+          </p>
+          <ul>
+            <li>Tumačenje rezultata ispitivanja</li>
+            <li>Procena usklađenosti sa domaćim i EU propisima</li>
+            <li>Menadžment testiranjem</li>
+            <li>Zastupanje kod nadležnih inspekcijskih organa po potrebi</li>
+            <li>Komunikacija sa Ministarstvom zdravlja po potrebi</li>
+            <li>Obuke o usklađenosti sa propisima o bezbednosti proizvoda</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="contact-box">
+      <h2>Kontakt</h2>
+
+      <p>
+        Gordana Vraštanović Pavićević, spec. san. hem.
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:gvpconsult24@gmail.com">
+          gvpconsult24@gmail.com
+        </a>
+      </p>
+
+      <p>
+        Telefon:
+        <a href="tel:+381641579599">
+          +381 64 157 95 99
+        </a>
+      </p>
+
+      <p>
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/gordana-vrastanovic-pavicevic-48698171/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Pogledajte profil
+        </a>
+      </p>
+    </section>
+
+  </main>
 </body>
 </html>
